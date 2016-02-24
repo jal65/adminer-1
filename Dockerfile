@@ -2,7 +2,7 @@ FROM alpine
 MAINTAINER Nicolas RAMY <nicolas.ramy@darkelda.com>
 
 RUN apk update && apk upgrade
-RUN apk add php wget
+RUN apk add php php-pdo_mysql php-pdo_pgsql php-mysqli php-mcrypt php-mysql php-pgsql
 
 # install adminer and default theme
 RUN mkdir /var/www
